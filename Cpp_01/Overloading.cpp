@@ -15,3 +15,4 @@ int main() {
 	std::cout << "MyFunc with 2 integers: " << MyFunc(30, 40) << std::endl;
 	return 0;
 }
+
