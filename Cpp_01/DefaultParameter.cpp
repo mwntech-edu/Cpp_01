@@ -14,7 +14,6 @@ int YourFunc(int num1, int num2 = 20, int num3 = 30) {
 }
 
 int main() {
-
 	std::cout << "MyFuncOne with no parameter: " << MyFuncOne() << std::endl;
 	std::cout << "MyFuncOne with parameter 7: " << MyFuncOne(7) << std::endl;
 	std::cout << "MyFuncOne with parameter 10: " << MyFuncOne(10) << std::endl;
