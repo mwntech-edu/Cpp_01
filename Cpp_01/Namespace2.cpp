@@ -1,4 +1,7 @@
 #include <iostream>
+//using namespace Pusan;
+//using namespace Seoul;
+
 namespace Pusan {
 	namespace Aban {
 		int chulsu = 170;
