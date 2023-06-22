@@ -1,17 +1,24 @@
 #include<iostream>
 using namespace std;
+
 int& RefRetFuncOne(int& ref) {
 	return ++ref;
 }
+
 int RefRetFuncTwo(int& ref) {
 	return ++ref;
 }
+
 int& RetRefFunc(int n) {
 	int num = 20;
 	num += n;
 	return num;
 }
-int Adder(int const& num1, int const num2) { return num1 + num2; }
+
+int Adder(int const& num1, int const& num2) { 
+	return num1 + num2; 
+}
+
 int main() {
 	int num1 = 1;
 	//int& num2 = RefRetFuncOne(num1);
@@ -32,6 +39,6 @@ int main() {
 	int const& refN1 = n1;
 	cout << refN1 << endl;
 	int const& refC = 30;
-	cout << Adder(10, refC) << endl;
+	cout << Adder(10, 20) << endl;
 	return 0;
 }
