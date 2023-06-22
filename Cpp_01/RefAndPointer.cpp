@@ -22,4 +22,16 @@ int main() {
 	cout << ref2 << " = " << arr[1] << endl;
 	ref2 = 7;
 	cout << ref2 << " = " << arr[1] << endl;
+	/////////////////////////////////////////
+	int num = 12;
+	int* ptr = &num;
+	int** dptr = &ptr;
+
+	int& ref = num;
+	int* (&pref) = ptr;
+	int** (&dpref) = dptr;
+
+	cout << ref << endl;
+	cout << *pref << endl;
+	cout << **dpref << endl;
 }
