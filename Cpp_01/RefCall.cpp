@@ -11,6 +11,7 @@ int& RetRefFunc(int n) {
 	num += n;
 	return num;
 }
+int Adder(int const& num1, int const num2) { return num1 + num2; }
 int main() {
 	int num1 = 1;
 	//int& num2 = RefRetFuncOne(num1);
@@ -26,5 +27,11 @@ int main() {
 	//refRet++;
 	cout << refRet << endl;
 	cout << refRet << endl;
+
+	int const n1 = 20;
+	int const& refN1 = n1;
+	cout << refN1 << endl;
+	int const& refC = 30;
+	cout << Adder(10, refC) << endl;
 	return 0;
 }
