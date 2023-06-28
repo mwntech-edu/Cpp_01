@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp_01", "Cpp_01\Cpp_01.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp_03", "Cpp_03\Cpp_03.vcxproj", "{FEA39B7C-4F18-4AA0-80C9-38D98BD86BBE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp_04", "Cpp_04\Cpp_04.vcxproj", "{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{FEA39B7C-4F18-4AA0-80C9-38D98BD86BBE}.Release|x64.Build.0 = Release|x64
 		{FEA39B7C-4F18-4AA0-80C9-38D98BD86BBE}.Release|x86.ActiveCfg = Release|Win32
 		{FEA39B7C-4F18-4AA0-80C9-38D98BD86BBE}.Release|x86.Build.0 = Release|Win32
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Debug|x64.ActiveCfg = Debug|x64
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Debug|x64.Build.0 = Debug|x64
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Debug|x86.ActiveCfg = Debug|Win32
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Debug|x86.Build.0 = Debug|Win32
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Release|x64.ActiveCfg = Release|x64
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Release|x64.Build.0 = Release|x64
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Release|x86.ActiveCfg = Release|Win32
+		{4B42329F-1CB3-48FC-9B70-3AEE0BCF82A1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
