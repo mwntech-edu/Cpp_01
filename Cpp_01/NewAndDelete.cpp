@@ -18,7 +18,9 @@ int main() {
 	cout << ref << endl;
 	cout << *refptr << endl;
 	cout << refptr << endl;
-	cout << &ref << endl;
+	cout << "ptr val: " << ptr << endl;
+	cout << "ref addr: " << & ref << endl;
+
 	cout << "sizeof arr1 : " << sizeof(*arr1) << endl;
 	for (int i = 0; i < 3; i++)
 		cout << arr1[i] << endl;
