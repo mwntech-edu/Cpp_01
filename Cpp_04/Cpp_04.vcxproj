@@ -131,7 +131,9 @@
     <ClInclude Include="Rectangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Contact600.cpp" />
+    <ClCompile Include="Contact600.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Main1.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>

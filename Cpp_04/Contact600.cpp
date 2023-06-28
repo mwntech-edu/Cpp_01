@@ -25,8 +25,10 @@ public:
 	}
 };
 class ColdPatient {
-public: void TakeCONTAC600(const CONTAC600& cap) const 
-{ cap.Take(); }
+public: 
+	void TakeCONTAC600(const CONTAC600& cap) const { 
+		cap.Take(); 
+	}
 };
 int main() {
 	CONTAC600 c600;
