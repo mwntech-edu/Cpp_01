@@ -131,7 +131,10 @@
     <ClInclude Include="Rectangle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main1.cpp" />
+    <ClCompile Include="Contact600.cpp" />
+    <ClCompile Include="Main1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
