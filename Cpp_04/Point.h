@@ -5,11 +5,13 @@ private:
 	int x;
 	int y;
 public:
-	bool InitMembers(int xpos, int ypos) {
-		SetX(xpos); SetY(ypos);
-		return true;
+	//Point(){}
+	Point(const int& xpos, const int& ypos) : x(xpos), y(ypos)
+	{
+		//SetX(xpos); SetY(ypos);
 	}
-	int GetX() const {  return x; }
+	
+	int GetX() const {  return x; } 
 	int GetY() const {  return y; }
 	bool SetX(int xpos) {
 		if (0 > xpos || xpos > 100) {
