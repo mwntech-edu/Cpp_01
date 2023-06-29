@@ -39,7 +39,7 @@ int main() {
 	arrP[0] = new Person("Chulsu", 20);
 	arrP[1] = &chul;
 	arrP[2] = new Person("¿µÈñ", 23);
-
+	
 	for (int i = 0; i < sizeof(arrP) / sizeof(arrP[0]); i++)
 	{
 		arrP[i]->ShowPersonInfo();
