@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Person.h"
 using namespace std;
+//extern int g;
+static int g = 1000;
 
 void Counter() {
 	//int cnt = 0;
@@ -9,6 +11,7 @@ void Counter() {
 	cout << "Current cnt: " << cnt << endl;
 }
 int main() {
+	cout << g << endl;
 	for (int i = 0; i < 10; i++)
 	{
 		Counter();

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 using namespace std;
+static int g = 777;
 
 class Person {
 private:
@@ -29,6 +30,7 @@ public:
 	void ShowPersonInfo() const {
 		cout << "이름: " << name << endl;
 		cout << "나이: " << age << endl;
+		cout << g << endl;
 	}
 	static void PrintCnt() { cout << "cnt: " << cnt << endl; }
 	~Person() {
