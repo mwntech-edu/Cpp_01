@@ -9,29 +9,38 @@ private:
 	static int cnt;
 public:
 	Person() {
+		if (cnt == 0) cout << "Error " << endl;
 		name = NULL;
 		age = 0;
+		cnt++;
 	}
 	Person(char const* myname, int myage) {
-		int len = strlen(myname) + 1;		// chulsu = 5 + 1
-		name = new char[len];
-		strcpy_s(name, len, myname);
+		if (cnt == 0) {
+			int len = strlen(myname) + 1;		// chulsu = 6 + 1
+			name = new char[len];
+			strcpy_s(name, len, myname);
+			cout << "Heap allocated!! " << endl;
+		}
 		age = myage;
 		cnt++;
 	}
-	Person(Person const& copy) : age(copy.age) {
-		int len = strlen(copy.name) + 1;
-		name = new char[len];
-		strcpy_s(name, len, copy.name);
-	}
+	Person(Person& copy) : name(copy.name), age(copy.age) { cnt++; }
+	void SetAge(int n) { age = n; }
 	void ShowPersonInfo() const {
 		cout << "이름: " << name << endl;
 		cout << "나이: " << age << endl;
 	}
 	static void PrintCnt() { cout << "cnt: " << cnt << endl; }
 	~Person() {
-		delete[] name;
-		cout << "called destructor!" << endl;
+		if (cnt > 0) {
+			cnt--;
+			if (cnt == 0) {
+				delete[] name;
+				cout << "Heap deleted!" << endl;
+			}
+
+		}
+		cout << "called destructor!" << age << endl;
 	}
 };
 int Person::cnt = 0;
