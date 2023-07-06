@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Person.h"
 using namespace std;
 
 
@@ -14,6 +15,13 @@ int main() {
 	{
 		Counter();
 	}
+
+	Person p1("chulsu", 10);
+	p1.PrintCnt();
+	Person p2("Tom", 12);
+	Person::PrintCnt();
+	Person p3("Nick", 14);
+	Person::PrintCnt();
 
 	return 0;
 }
